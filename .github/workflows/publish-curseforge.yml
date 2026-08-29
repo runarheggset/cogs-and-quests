@@ -1,6 +1,8 @@
 name: Publish to CurseForge
 
 on:
+  push:
+    tags: ["v*"]   # release.published won't fire for GITHUB_TOKEN-created releases
   release:
     types: [published]
   workflow_dispatch:
@@ -10,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       CF_API_TOKEN: ${{ secrets.CURSEFORGE_TOKEN }}
-      CF_PROJECT_ID: ${{ vars.CURSEFORGE_PROJECT_ID }}
+      CF_PROJECT_ID: ${{ secrets.CURSEFORGE_PROJECT_ID || vars.CURSEFORGE_PROJECT_ID }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-go@v5
