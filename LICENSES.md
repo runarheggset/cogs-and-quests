@@ -25,6 +25,7 @@ checking per-mod terms: bundle jars in the repo or a release, or fork/patch a mo
 | Create | Create-Mod-License |
 | Create Confectionery | MIT |
 | Creeper no Break Blocks | All Rights Reserved |
+| Cristel Lib | CC-BY-NC-ND-4.0 |
 | Dragon Mounts: Legacy | GPL-3.0-only |
 | Easy Anvils | MPL-2.0 |
 | Embeddium | LGPL-3.0-only |
@@ -53,16 +54,24 @@ checking per-mod terms: bundle jars in the repo or a release, or fork/patch a mo
 | Sophisticated Backpacks | All Rights Reserved |
 | Sophisticated Core | All Rights Reserved |
 | Storage Drawers | MIT |
+| Structory | Stardust-Labs-License |
 | Supplementaries | Supplementaries-Team-License |
+| Terralith | Stardust-Labs-License |
+| Towns and Towers | CC-BY-NC-SA-4.0 |
 | Trading Post | MPL-2.0 |
 | Waystones | All Rights Reserved |
+| When Dungeons Arise - Forge! | All-Rights-Reserved |
 | Xaero's Minimap | All Rights Reserved |
 | Xaero's World Map | All Rights Reserved |
 | YDM's MobHealthBar | ARR (assumed; CurseForge-only, no license published) |
 | YUNG's API (Forge/NeoForge) | LGPL-3.0-only |
+| YUNG's Better Desert Temples (Forge/NeoForge) | LGPL-3.0-only |
 | YUNG's Better Dungeons (Forge/NeoForge) | LGPL-3.0-only |
 | YUNG's Better Mineshafts (Forge/NeoForge) | LGPL-3.0-only |
+| YUNG's Better Nether Fortresses (Forge/NeoForge) | LGPL-3.0-only |
+| YUNG's Better Ocean Monuments (Forge/NeoForge) | LGPL-3.0-only |
 | YUNG's Better Strongholds (Forge/NeoForge) | LGPL-3.0-only |
+| YUNG's Better Witch Huts (Forge/NeoForge) | LGPL-3.0-only |
 
 Notes:
 - CC-BY-NC-SA / CC-BY-NC-ND (Jade, Nature's/Explorer's Compass, Advancement

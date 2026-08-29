@@ -16,6 +16,7 @@ Generated with `packwiz list` — regenerate after adding/removing mods.
 - Create
 - Create Confectionery
 - Creeper no Break Blocks
+- Cristel Lib
 - Dragon Mounts: Legacy
 - Easy Anvils
 - Embeddium
@@ -44,13 +45,21 @@ Generated with `packwiz list` — regenerate after adding/removing mods.
 - Sophisticated Backpacks
 - Sophisticated Core
 - Storage Drawers
+- Structory
 - Supplementaries
+- Terralith
+- Towns and Towers
 - Trading Post
 - Waystones
+- When Dungeons Arise - Forge!
 - Xaero's Minimap
 - Xaero's World Map
 - YDM's MobHealthBar
 - YUNG's API (Forge/NeoForge)
+- YUNG's Better Desert Temples (Forge/NeoForge)
 - YUNG's Better Dungeons (Forge/NeoForge)
 - YUNG's Better Mineshafts (Forge/NeoForge)
+- YUNG's Better Nether Fortresses (Forge/NeoForge)
+- YUNG's Better Ocean Monuments (Forge/NeoForge)
 - YUNG's Better Strongholds (Forge/NeoForge)
+- YUNG's Better Witch Huts (Forge/NeoForge)
