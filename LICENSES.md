@@ -11,6 +11,7 @@ checking per-mod terms: bundle jars in the repo or a release, or fork/patch a mo
 
 | Mod | License |
 |---|---|
+| Amendments | Supplementaries-Team-License-1.1 |
 | AppleSkin | Unlicense |
 | Aquaculture 2 | All Rights Reserved |
 | Balm | All Rights Reserved |

@@ -2,6 +2,7 @@
 
 Generated with `packwiz list` — regenerate after adding/removing mods.
 
+- Amendments
 - AppleSkin
 - Aquaculture 2
 - Balm
