@@ -29,13 +29,20 @@ jobs:
             exit 0
           fi
           ZIP=$(ls *.zip | head -1)
-          # resolve CurseForge's numeric IDs for 1.20.1 + Forge at runtime
+          # resolve CurseForge's numeric IDs for 1.20.1 + Forge at runtime.
+          # Names repeat across version-type groups, so filter by type:
+          # '1.20.1' from a 'Minecraft 1.20' group, 'Forge' from 'Modloader'.
+          export TYPES=$(curl -sS --fail-with-body -H "X-Api-Token: $CF_API_TOKEN" https://minecraft.curseforge.com/api/game/version-types)
           VERSIONS=$(curl -sS --fail-with-body -H "X-Api-Token: $CF_API_TOKEN" https://minecraft.curseforge.com/api/game/versions)
           export IDS=$(echo "$VERSIONS" | python3 -c "
-          import json,sys
+          import json,sys,os
+          types=json.loads(os.environ['TYPES'])
+          mc={t['id'] for t in types if t['name'].startswith('Minecraft ')}
+          ml={t['id'] for t in types if t['name']=='Modloader'}
           vs=json.load(sys.stdin)
-          ids=[v['id'] for v in vs if v['name'] in ('1.20.1','Forge')]
-          assert ids, 'no matching game version ids'
+          ids=[v['id'] for v in vs if (v['name']=='1.20.1' and v['gameVersionTypeID'] in mc)
+                                   or (v['name']=='Forge'  and v['gameVersionTypeID'] in ml)]
+          assert len(ids)==2, f'expected 2 ids, got {ids}'
           print(json.dumps(ids))")
           echo "resolved gameVersions: $IDS"
           METADATA=$(python3 -c "
