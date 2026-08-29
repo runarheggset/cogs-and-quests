@@ -70,3 +70,12 @@ cogs-and-quests` + `CF_FILE_ID: <id>` and a `CF_API_KEY` from
 console.curseforge.com in a k8s Secret. Downside: the CF manifest has no
 client/server markers, so the six client-only mods must be listed in
 `CF_EXCLUDE_MODS` by hand.
+
+## The seed
+
+`20260829` (the day the pack was finished). Chosen by generating eight
+candidate worlds under the pack's exact Terralith version and scoring the
+spawns over RCON; this one had river/forest/mountain/village/ocean/ruined
+portal all within ~450 blocks of spawn, on land. Already wired into the k8s
+manifest as `SEED`; for a manual server put `level-seed=20260829` in
+server.properties before first boot.

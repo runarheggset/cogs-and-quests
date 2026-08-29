@@ -86,6 +86,12 @@ spec:
             # Must match [versions] in pack.toml.
             - name: FORGE_VERSION
               value: "47.4.23"
+            # Tested under our exact Terralith 2.5.4: river 45, forest 204,
+            # mountain 295, ocean 385, village 384, ruined portal 422 blocks
+            # from spawn. Applies at world CREATION only; changing it later
+            # means wiping /data/world.
+            - name: SEED
+              value: "20260829"
 
             # --- the pack ----------------------------------------------
             # packwiz-installer runs on every boot, converges /data/mods to
