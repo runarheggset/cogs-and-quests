@@ -1,0 +1,189 @@
+# Cogs & Quests -- Minecraft 1.20.1 Forge, packwiz-managed (61 mods)
+#
+# Apply with:  kubectl apply -f k8s/cogsquests.yaml
+#
+# The server installs the pack DIRECTLY from this repo's pack.toml, pinned to a
+# git tag. Bumping the tag below (and re-applying + rollout restart) is how the
+# server updates -- same source of truth as both clients.
+#
+# REQUIREMENT: the GitHub repo must be public for raw.githubusercontent.com to
+# serve it. If you want to keep it private instead, see "Private repo
+# alternative" in SERVER.md (AUTO_CURSEFORGE against the published pack).
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: cogsquests
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cogsquests-internal
+  namespace: cogsquests
+spec:
+  clusterIP: None
+  selector:
+    app: cogsquests
+  ports:
+    - name: minecraft
+      port: 25565
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cogsquests
+  namespace: cogsquests
+spec:
+  type: NodePort
+  selector:
+    app: cogsquests
+  ports:
+    - name: minecraft
+      protocol: TCP
+      port: 25565
+      targetPort: 25565
+      # 30565 is taken by chunkcolony. Confirm this one is free:
+      #   kubectl get svc -A -o jsonpath='{range .items[*].spec.ports[*]}{.nodePort} {end}' | tr ' ' '\n' | sort -un
+      nodePort: 30566
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: cogsquests
+  namespace: cogsquests
+spec:
+  serviceName: cogsquests-internal
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cogsquests
+  template:
+    metadata:
+      labels:
+        app: cogsquests
+    spec:
+      # itzg runs as uid/gid 1000; fsGroup makes the PVC writable.
+      securityContext:
+        fsGroup: 1000
+      # Give the world time to save on shutdown.
+      terminationGracePeriodSeconds: 120
+      containers:
+        - name: cogsquests
+          # Forge 1.20.1 wants Java 17. Do not bump this to java21.
+          image: itzg/minecraft-server:java17
+          ports:
+            - name: minecraft
+              containerPort: 25565
+            - name: rcon
+              containerPort: 25575
+          env:
+            - name: EULA
+              value: "TRUE"
+            - name: TYPE
+              value: "FORGE"
+            - name: VERSION
+              value: "1.20.1"
+            # Must match [versions] in pack.toml.
+            - name: FORGE_VERSION
+              value: "47.4.23"
+
+            # --- the pack ----------------------------------------------
+            # packwiz-installer runs on every boot, converges /data/mods to
+            # exactly the pinned index at this tag (adds, updates, removes),
+            # and skips the six side="client" mods on its own. To update the
+            # server: push a new tag, bump this, apply, rollout restart.
+            - name: PACKWIZ_URL
+              value: "https://raw.githubusercontent.com/runarheggset/cogs-and-quests/v0.2.0/pack.toml"
+
+            # --- memory -------------------------------------------------
+            # Heap 8G in a 10Gi container; the headroom is metaspace, GC
+            # structures and native allocations. Heap == limit gets OOMKilled.
+            - name: MEMORY
+              value: "8G"
+            - name: USE_AIKAR_FLAGS
+              value: "true"
+
+            # --- gameplay / tuning -------------------------------------
+            - name: DIFFICULTY
+              value: "normal"
+            - name: MAX_PLAYERS
+              value: "4"
+            # These two cap how much world the 8GB client has to hold.
+            - name: VIEW_DISTANCE
+              value: "8"
+            - name: SIMULATION_DISTANCE
+              value: "6"
+            # Create contraptions, Immersive Aircraft and dragon mounts all
+            # trip the vanilla flight kick without this.
+            - name: ALLOW_FLIGHT
+              value: "TRUE"
+            - name: SPAWN_PROTECTION
+              value: "0"
+            - name: MOTD
+              value: "Cogs & Quests - one builds the factory, one rides the dragon"
+            - name: OVERRIDE_SERVER_PROPERTIES
+              value: "true"
+            - name: ENABLE_ROLLING_LOGS
+              value: "true"
+            - name: TZ
+              value: "Europe/Oslo"
+            # Applied via RCON on every boot; gamerules live in the world, not
+            # server.properties. Idempotent, so re-running is harmless.
+            - name: RCON_CMDS_STARTUP
+              value: |
+                gamerule playersSleepingPercentage 50
+            - name: OPS
+              value: "Perontiok"
+
+            # --- whitelist (manifest is the source of truth) -----------
+            - name: WHITELIST
+              value: "Perontiok,Rabbestappe"
+            - name: ENFORCE_WHITELIST
+              value: "TRUE"
+            # whitelist.json is rewritten from WHITELIST on every boot.
+            # Trade-off: in-game `/whitelist add` is undone on restart.
+            - name: EXISTING_WHITELIST_FILE
+              value: "SYNCHRONIZE"
+
+          resources:
+            requests:
+              memory: "10Gi"
+              cpu: "2"
+            limits:
+              memory: "10Gi"
+              # Deliberately no CPU limit: Terralith/YUNG chunk generation is
+              # bursty, and a CFS quota turns that into visible tick lag.
+
+          # First boot downloads Forge + ~55 server mods and generates a
+          # Terralith world; the startup budget is deliberately long (20 min).
+          startupProbe:
+            exec:
+              command: ["mc-health"]
+            initialDelaySeconds: 60
+            periodSeconds: 15
+            failureThreshold: 80
+          readinessProbe:
+            exec:
+              command: ["mc-health"]
+            periodSeconds: 15
+            failureThreshold: 3
+          livenessProbe:
+            exec:
+              command: ["mc-health"]
+            periodSeconds: 30
+            failureThreshold: 6
+
+          volumeMounts:
+            - name: data
+              mountPath: /data
+  volumeClaimTemplates:
+    - metadata:
+        name: data
+      spec:
+        accessModes: ["ReadWriteOnce"]
+        storageClassName: microk8s-hostpath
+        resources:
+          requests:
+            # Terralith worlds run bigger than vanilla; expanding a PVC later
+            # is easy, shrinking is not.
+            storage: 25Gi

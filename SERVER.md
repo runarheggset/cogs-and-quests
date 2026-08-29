@@ -43,3 +43,30 @@ can never drift from the repo.
 
 Port-forward 25565, or skip router pain entirely with Tailscale on both
 machines (he connects to your tailnet IP) or playit.gg for a public address.
+
+## Kubernetes instead
+
+`k8s/cogsquests.yaml` deploys the same server as a StatefulSet on the cluster
+(same shape as the chunkcolony one): itzg/minecraft-server with `PACKWIZ_URL`
+pointed at this repo's `pack.toml` **at a git tag**, so the server converges to
+the exact pinned mod set on every boot and client-only mods are skipped
+automatically.
+
+```sh
+kubectl apply -f k8s/cogsquests.yaml
+kubectl -n cogsquests logs -f statefulset/cogsquests   # first boot ~10-20 min
+```
+
+- NodePort **30566** (30565 is chunkcolony's). Router-forward 25565/tcp there.
+- Updating the server = push a new tag, bump `PACKWIZ_URL`, re-apply,
+  `kubectl -n cogsquests rollout restart statefulset/cogsquests`.
+- `playersSleepingPercentage 50` is applied via `RCON_CMDS_STARTUP`; no manual
+  gamerule needed.
+- **The repo must be public** for the raw URL to resolve.
+
+**Private repo alternative:** once the CurseForge file is approved, swap the
+`PACKWIZ_URL` env for `MOD_PLATFORM: AUTO_CURSEFORGE` + `CF_SLUG:
+cogs-and-quests` + `CF_FILE_ID: <id>` and a `CF_API_KEY` from
+console.curseforge.com in a k8s Secret. Downside: the CF manifest has no
+client/server markers, so the six client-only mods must be listed in
+`CF_EXCLUDE_MODS` by hand.

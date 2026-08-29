@@ -6,5 +6,6 @@ LICENSES.md
 SERVER.md
 CURSEFORGE.md
 assets/
+k8s/
 LICENSE
 *.zip
