@@ -30,11 +30,14 @@ jobs:
           fi
           ZIP=$(ls *.zip | head -1)
           # resolve CurseForge's numeric IDs for 1.20.1 + Forge at runtime
-          VERSIONS=$(curl -sf -H "X-Api-Token: $CF_API_TOKEN" https://minecraft.curseforge.com/api/game/versions)
-          IDS=$(echo "$VERSIONS" | python3 -c "
+          VERSIONS=$(curl -sS --fail-with-body -H "X-Api-Token: $CF_API_TOKEN" https://minecraft.curseforge.com/api/game/versions)
+          export IDS=$(echo "$VERSIONS" | python3 -c "
           import json,sys
           vs=json.load(sys.stdin)
-          print(json.dumps([v['id'] for v in vs if v['name'] in ('1.20.1','Forge')]))")
+          ids=[v['id'] for v in vs if v['name'] in ('1.20.1','Forge')]
+          assert ids, 'no matching game version ids'
+          print(json.dumps(ids))")
+          echo "resolved gameVersions: $IDS"
           METADATA=$(python3 -c "
           import json,os
           print(json.dumps({
@@ -43,8 +46,7 @@ jobs:
             'releaseType': 'release',
             'gameVersions': json.loads(os.environ['IDS']),
           }))" )
-          export IDS
-          curl -sf -H "X-Api-Token: $CF_API_TOKEN" \
+          curl -sS --fail-with-body -H "X-Api-Token: $CF_API_TOKEN" \
             -F "metadata=$METADATA" \
             -F "file=@$ZIP" \
             "https://minecraft.curseforge.com/api/projects/$CF_PROJECT_ID/upload-file"
