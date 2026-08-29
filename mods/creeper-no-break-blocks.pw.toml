@@ -1,0 +1,13 @@
+name = "Creeper no Break Blocks"
+filename = "nocreeperexplosion-1.20.x-1.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "41bf9505854c0933071ee7597318f513cffc4c95"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4784110
+project-id = 884883

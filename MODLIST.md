@@ -1,0 +1,56 @@
+# Mod list
+
+Generated with `packwiz list` — regenerate after adding/removing mods.
+
+- AppleSkin
+- Aquaculture 2
+- Balm
+- Better Treasure Map
+- Bookshelf
+- Botany Pots
+- Canary
+- Clumps
+- Comforts
+- Cooking for Blockheads
+- Corpse
+- Create
+- Create Confectionery
+- Creeper no Break Blocks
+- Dragon Mounts: Legacy
+- Easy Anvils
+- Embeddium
+- Enchantment Descriptions
+- Entity Culling Fabric/Forge
+- Explorer's Compass
+- Farmer's Delight
+- Farmer's Respite
+- FerriteCore ((Neo)Forge)
+- FramedBlocks
+- GeckoLib
+- GlitchCore
+- Guard Villagers
+- Immersive Aircraft
+- Jade 🔍
+- Just Enough Items (JEI)
+- ModernFix
+- Moonlight Lib
+- Mouse Tweaks
+- Naturalist
+- Nature's Compass
+- Nether's Delight
+- Puzzles Lib
+- Serene Seasons
+- Small Ships [Fabric & Forge]
+- Sophisticated Backpacks
+- Sophisticated Core
+- Storage Drawers
+- Supplementaries
+- Trading Post
+- Waystones
+- Xaero's Minimap
+- Xaero's World Map
+- YDM's MobHealthBar
+- YUNG's API (Forge/NeoForge)
+- YUNG's Better Dungeons (Forge/NeoForge)
+- YUNG's Better Mineshafts (Forge/NeoForge)
+- YUNG's Better Strongholds (Forge/NeoForge)

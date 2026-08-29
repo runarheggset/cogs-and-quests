@@ -1,0 +1,7 @@
+# exported packs
+*.zip
+*.mrpack
+out/
+
+# packwiz local cache/scratch
+.packwiz/

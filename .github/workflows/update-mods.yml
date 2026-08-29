@@ -1,0 +1,46 @@
+name: Update mods
+
+on:
+  workflow_dispatch:
+    inputs:
+      mod:
+        description: "Mod to update (metadata name, e.g. 'create'), or 'all'"
+        required: true
+        default: "all"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: stable
+
+      - name: Install packwiz
+        run: go install github.com/packwiz/packwiz@latest
+
+      - name: Update
+        run: |
+          if [ "${{ github.event.inputs.mod }}" = "all" ]; then
+            packwiz update --all -y
+          else
+            packwiz update "${{ github.event.inputs.mod }}" -y
+          fi
+
+      - name: Open PR with changes
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: update/${{ github.event.inputs.mod }}
+          title: "Update ${{ github.event.inputs.mod }}"
+          commit-message: "Update ${{ github.event.inputs.mod }}"
+          body: |
+            Automated `packwiz update ${{ github.event.inputs.mod }}`.
+            Pinned mods (`packwiz pin`) are not touched.
+            Review the .pw.toml diffs, then test the exported pack from the build workflow on this PR.
+          delete-branch: true

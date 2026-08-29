@@ -1,0 +1,6 @@
+# repo files that must NOT be shipped inside the modpack zip
+.github/
+README.md
+MODLIST.md
+LICENSE
+*.zip

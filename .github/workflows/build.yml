@@ -1,0 +1,51 @@
+name: Build modpack
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write # needed to attach files to releases
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: stable
+
+      - name: Install packwiz
+        run: go install github.com/packwiz/packwiz@latest
+
+      - name: Validate index (refresh must be a no-op)
+        run: |
+          packwiz refresh
+          if ! git diff --exit-code; then
+            echo "::error::Index is out of date. Run 'packwiz refresh' locally and commit the result."
+            exit 1
+          fi
+
+      - name: Export CurseForge pack
+        run: |
+          packwiz curseforge export
+          mkdir -p out
+          mv *.zip out/
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: curseforge-pack
+          path: out/*.zip
+
+      - name: Release (on tag)
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: out/*.zip
+          generate_release_notes: true
