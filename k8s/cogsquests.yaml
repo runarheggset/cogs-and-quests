@@ -99,7 +99,7 @@ spec:
             # and skips the six side="client" mods on its own. To update the
             # server: push a new tag, bump this, apply, rollout restart.
             - name: PACKWIZ_URL
-              value: "https://raw.githubusercontent.com/runarheggset/cogs-and-quests/v0.3.0/pack.toml"
+              value: "https://raw.githubusercontent.com/runarheggset/cogs-and-quests/v0.3.1/pack.toml"
 
             # --- memory -------------------------------------------------
             # Heap 8G in a 10Gi container; the headroom is metaspace, GC

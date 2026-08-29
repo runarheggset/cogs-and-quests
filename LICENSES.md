@@ -89,3 +89,7 @@ Notes:
 - Entity Culling (tr7zw Protective License) and Create (Create Mod License) both
   explicitly permit modpack inclusion.
 - Regenerate with the audit script if the roster changes.
+- Structory is sourced from Modrinth (its CurseForge third-party API access is
+  disabled) and ships inside the pack zip under Stardust Labs' license, which
+  permits modpack redistribution with credit: worldgen by Stardust Labs
+  (stardustlabs.net).

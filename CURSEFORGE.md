@@ -42,3 +42,5 @@ not a wheat field you visit once.
 
 One of you builds the factory, the other fills the storage hall with dungeon
 loot. That's the whole idea.
+
+Worldgen by Stardust Labs (Terralith, Structory) - stardustlabs.net.
