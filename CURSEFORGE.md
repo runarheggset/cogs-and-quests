@@ -1,52 +1,42 @@
 # CurseForge project description
 
-Paste the description below into the project's description editor (it accepts
-this as-is via the markdown/HTML toggle).
+Paste the description below into the project's description editor.
 
 ## Summary (project settings, one line, max 250 chars)
 
-> A cozy Vanilla+ co-op pack for two kinds of players: one builds Create
-> factories and rail networks, the other rides dragons through Terralith
-> worlds and YUNG dungeons. Light enough for an 8 GB PC.
+> A Vanilla+ co-op pack for two kinds of players: one builds Create factories
+> and rail networks, the other rides dragons through Terralith worlds and YUNG
+> dungeons. Light enough for an 8 GB PC.
 
-Alternates:
+## Description
 
-> Vanilla+ done right: Create automation meets overhauled worldgen, dragons,
-> ships and seasonal farming in a lightweight, carefully pinned 1.20.1 pack.
+My friend and I couldn't agree on what to play. I wanted Create contraptions
+and train networks. He wanted to explore, fight things and cook. He also has
+8 GB of RAM. This pack is what we ended up with, and it turned out good enough
+that we figured we'd share it.
 
-> One of you automates the world, the other explores it. Create factories plus
-> Terralith, the full YUNG suite, dragons and Farmer's Delight cooking.
+The rule while building it was simple: if it doesn't feel like it could be
+vanilla, it doesn't go in. So there's no kitchen sink here, no tech mods with
+fifty GUIs, and no lucky blocks (sorry). Create is the only "big" mod, and
+it's the one tech mod that's actually fun to live next to, because everything
+it does is physical. Gears turn, belts run, trains show up on time, packages
+get launched across the base. Your non-technical friend can walk through your
+factory and understand what it does.
 
----
+The other half of the pack is for the friend. Terralith terrain, every vanilla
+structure rebuilt by YUNG's mods, the occasional huge dungeon from When
+Dungeons Arise, villages that are actually worth defending. You can raise and
+ride dragons, sail real ships, build a rickety little aircraft. Cooking is a
+proper part of the loop too, with Farmer's Delight and seasons, so the farm
+isn't just a wheat field you visit once.
 
-## Cogs & Quests
+Performance mods are built in (Embeddium, FerriteCore, ModernFix, Canary,
+Entity Culling). Allocate 4 GB and it runs fine. We know because half of this
+pack was chosen around an 8 GB machine.
 
-**A Vanilla+ modpack for engineers and adventurers who share a server.**
+61 mods on 1.20.1 Forge, every version pinned. Updates are deliberate, so
+nothing changes under your save without us meaning it to.
 
-Every mod here could pass for vanilla content. No tech trees full of GUIs, no
-kitchen-sink chaos — just Minecraft, deeper.
-
-### For the builder 🔧
-- **Create 6** — rotational power, trains, and the new package logistics
-  system: belts, depots, stock tickers and frogports instead of magic storage
-- **Storage Drawers, Botany Pots, FramedBlocks** — clean storage and thousands
-  of building shapes
-- Factories that your co-op partner can *walk through and understand*
-
-### For the adventurer ⚔️
-- **Terralith** worldgen with the **complete YUNG's suite** — every vanilla
-  structure redesigned — plus **When Dungeons Arise**, **Towns and Towers**
-  and **Structory**
-- **Dragon Mounts: Legacy**, **Small Ships**, **Immersive Aircraft** — raise a
-  dragon, sail a cog, fly a gyrocopter
-- **Farmer's Delight** cooking with **Serene Seasons**, **Aquaculture**
-  fishing, and villages worth defending (**Guard Villagers**, **Trading Post**)
-
-### Comfortable everywhere 🌿
-- **Supplementaries**, **Handcrafted**-style cozy detail, **Waystones**,
-  Xaero's maps, Corpse recovery, one-player-sleep friendly
-- **Runs on 8 GB machines**: Embeddium, FerriteCore, ModernFix, Canary and
-  Entity Culling are built in — allocate 4 GB and go
-
-**61 mods · Minecraft 1.20.1 · Forge**
-Reproducible builds: every mod version is pinned and audited.
+Best with two or three people on a small server. One of you builds the
+factory, the other fills the storage hall with dungeon loot. That's the whole
+idea.
