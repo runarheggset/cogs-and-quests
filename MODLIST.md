@@ -24,6 +24,7 @@ Generated with `packwiz list` — regenerate after adding/removing mods.
 - Enchantment Descriptions
 - Entity Culling Fabric/Forge
 - Explorer's Compass
+- Exposure
 - Farmer's Delight
 - Farmer's Respite
 - FerriteCore ((Neo)Forge)
@@ -31,16 +32,22 @@ Generated with `packwiz list` — regenerate after adding/removing mods.
 - GeckoLib
 - GlitchCore
 - Guard Villagers
+- Handcrafted
 - Immersive Aircraft
 - Jade 🔍
 - Just Enough Items (JEI)
+- MES - Moog's End Structures
+- Macaw's Bridges
+- Macaw's Furniture
 - ModernFix
+- Moog's Structure Lib (moogs_structures)
 - Moonlight Lib
 - Mouse Tweaks
 - Naturalist
 - Nature's Compass
 - Nether's Delight
 - Puzzles Lib
+- Resourceful Lib
 - Serene Seasons
 - Small Ships [Fabric & Forge]
 - Sophisticated Backpacks
@@ -51,6 +58,8 @@ Generated with `packwiz list` — regenerate after adding/removing mods.
 - Terralith
 - Towns and Towers
 - Trading Post
+- Villager Recruits: Claim and Siege Update!
+- Villager Workers 2
 - Waystones
 - When Dungeons Arise - Forge!
 - Xaero's Minimap

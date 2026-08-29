@@ -106,6 +106,11 @@ hash = "0db85b53cd32bb1d23c33273deaef58bd0f0429a180d171e3f02fe0ab86b0fe2"
 metafile = true
 
 [[files]]
+file = "mods/exposure.pw.toml"
+hash = "50c495c3ae5b77673bbb888c702bc2380d0528c3c0110db990ae181653bb0f63"
+metafile = true
+
+[[files]]
 file = "mods/farmers-delight.pw.toml"
 hash = "d753e79a5ac72386b753289212d61a1808dcbf64787b860f7ac93de34a063719"
 metafile = true
@@ -141,6 +146,11 @@ hash = "e89cbc4fac083a3e932ea4afe297e9bd0a1329e748cc5347397688c0986968f5"
 metafile = true
 
 [[files]]
+file = "mods/handcrafted.pw.toml"
+hash = "b9a7e71472f5f88229bf2f9e214b223b3900052bdc56075906d7a22acf74568c"
+metafile = true
+
+[[files]]
 file = "mods/immersive-aircraft.pw.toml"
 hash = "39398f1d161e96a6de60e9899184991d643323dde64b8f26072a1908269e9ff7"
 metafile = true
@@ -156,8 +166,28 @@ hash = "4b8627a78d4af0faed2f938a6061ccb7e1edb235d0759f2992abfa4c511559cb"
 metafile = true
 
 [[files]]
+file = "mods/macaws-bridges.pw.toml"
+hash = "48fd7031ccf8ecf2e16bddad85f5e53348137477ab465fb75cfd71fddc81bccc"
+metafile = true
+
+[[files]]
+file = "mods/macaws-furniture.pw.toml"
+hash = "3706f6817a641198fc325d578d189d502af7c3444148a72e4dc23f214c3611a1"
+metafile = true
+
+[[files]]
 file = "mods/modernfix.pw.toml"
 hash = "c7ffa2d9d6ffe6cc471e293baece3e8543ee3cadd7acf2c0c2c9bef0dc876a56"
+metafile = true
+
+[[files]]
+file = "mods/moogs-end-structures.pw.toml"
+hash = "f9df784cfaa44ed69247cc3ec37dcea87ad8a3f5bf01decb55f0ce47ae7b870e"
+metafile = true
+
+[[files]]
+file = "mods/moogs-structure-lib.pw.toml"
+hash = "ff4f65652f170d12b98c08b0a8f218911baf059226e1aa3a34f63ffc4394866f"
 metafile = true
 
 [[files]]
@@ -183,6 +213,16 @@ metafile = true
 [[files]]
 file = "mods/puzzles-lib.pw.toml"
 hash = "5ca42f4c23aee558ed76923d4fb92ecee736ebacb53790445c09d46bd9ccb27e"
+metafile = true
+
+[[files]]
+file = "mods/recruits.pw.toml"
+hash = "67d1d671f8246b013531c0991e2c3a97453667533252642c9daa55dda5a166d6"
+metafile = true
+
+[[files]]
+file = "mods/resourceful-lib.pw.toml"
+hash = "ef0264b7d819848f72ab2f34643306187e712965a8246e1f733e1bd39d8fd681"
 metafile = true
 
 [[files]]
@@ -253,6 +293,11 @@ metafile = true
 [[files]]
 file = "mods/when-dungeons-arise.pw.toml"
 hash = "0cb70caa22009a495a64a4332480b5ae80cb7fc7ba34c0a48ab8aff7df20b4f7"
+metafile = true
+
+[[files]]
+file = "mods/workers.pw.toml"
+hash = "84021866a600782501876f6b3ae7490ec9ea23abfc7d1df949888415a71f27f5"
 metafile = true
 
 [[files]]

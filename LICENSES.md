@@ -33,6 +33,7 @@ checking per-mod terms: bundle jars in the repo or a release, or fork/patch a mo
 | Enchantment Descriptions | LGPL-2.1-only |
 | Entity Culling Fabric/Forge | tr7zw-Protective-License |
 | Explorer's Compass | CC-BY-NC-SA-4.0 |
+| Exposure | MIT |
 | Farmer's Delight | MIT |
 | Farmer's Respite | All Rights Reserved |
 | FerriteCore ((Neo)Forge) | MIT |
@@ -40,16 +41,22 @@ checking per-mod terms: bundle jars in the repo or a release, or fork/patch a mo
 | GeckoLib | MIT |
 | GlitchCore | All Rights Reserved |
 | Guard Villagers | Custom |
+| Handcrafted | Terrarium-Licence |
 | Immersive Aircraft | GPL-3.0-only |
 | Jade 🔍 | CC-BY-NC-SA-4.0 |
 | Just Enough Items (JEI) | MIT |
 | ModernFix | LGPL-3.0-only |
+| MES - Moog's End Structures | LGPL-3.0-only |
+| Macaw's Bridges | All-Rights-Reserved |
+| Macaw's Furniture | All-Rights-Reserved |
+| Moog's Structure Lib (moogs_structures) | LGPL-3.0-only |
 | Moonlight Lib | Custom |
 | Mouse Tweaks | BSD-3-Clause |
 | Naturalist | Custom |
 | Nature's Compass | CC-BY-NC-SA-4.0 |
 | Nether's Delight | MIT |
 | Puzzles Lib | MPL-2.0 |
+| Resourceful Lib | MIT |
 | Serene Seasons | All Rights Reserved |
 | Small Ships [Fabric & Forge] | All Rights Reserved |
 | Sophisticated Backpacks | All Rights Reserved |
@@ -60,6 +67,8 @@ checking per-mod terms: bundle jars in the repo or a release, or fork/patch a mo
 | Terralith | Stardust-Labs-License |
 | Towns and Towers | CC-BY-NC-SA-4.0 |
 | Trading Post | MPL-2.0 |
+| Villager Recruits: Claim and Siege Update! | ARR (assumed; not resolvable on Modrinth) |
+| Villager Workers 2 | MIT |
 | Waystones | All Rights Reserved |
 | When Dungeons Arise - Forge! | All-Rights-Reserved |
 | Xaero's Minimap | All Rights Reserved |
