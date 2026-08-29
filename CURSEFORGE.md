@@ -1,10 +1,21 @@
 # CurseForge project description
 
-Paste into the project's description editor (it accepts this as-is via the
-markdown/HTML toggle). Summary line for the project settings:
+Paste the description below into the project's description editor (it accepts
+this as-is via the markdown/HTML toggle).
 
-> A cozy Vanilla+ pack built for two kinds of players: one who builds the
-> machine, and one who rides the dragon.
+## Summary (project settings, one line, max 250 chars)
+
+> A cozy Vanilla+ co-op pack for two kinds of players: one builds Create
+> factories and rail networks, the other rides dragons through Terralith
+> worlds and YUNG dungeons. Light enough for an 8 GB PC.
+
+Alternates:
+
+> Vanilla+ done right: Create automation meets overhauled worldgen, dragons,
+> ships and seasonal farming in a lightweight, carefully pinned 1.20.1 pack.
+
+> One of you automates the world, the other explores it. Create factories plus
+> Terralith, the full YUNG suite, dragons and Farmer's Delight cooking.
 
 ---
 
