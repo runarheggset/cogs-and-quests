@@ -5,3 +5,4 @@ out/
 
 # packwiz local cache/scratch
 .packwiz/
+*.log

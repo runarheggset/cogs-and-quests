@@ -9,3 +9,4 @@ assets/
 k8s/
 LICENSE
 *.zip
+*.log

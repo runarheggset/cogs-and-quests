@@ -34,6 +34,7 @@ checking per-mod terms: bundle jars in the repo or a release, or fork/patch a mo
 | Entity Culling Fabric/Forge | tr7zw-Protective-License |
 | Explorer's Compass | CC-BY-NC-SA-4.0 |
 | Exposure | MIT |
+| FallingTree | LGPL-3.0-only |
 | Farmer's Delight | MIT |
 | Farmer's Respite | All Rights Reserved |
 | FerriteCore ((Neo)Forge) | MIT |

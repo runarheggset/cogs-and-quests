@@ -25,6 +25,7 @@ Generated with `packwiz list` — regenerate after adding/removing mods.
 - Entity Culling Fabric/Forge
 - Explorer's Compass
 - Exposure
+- FallingTree
 - Farmer's Delight
 - Farmer's Respite
 - FerriteCore ((Neo)Forge)
