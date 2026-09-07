@@ -37,6 +37,12 @@ Run everything from the repo root.
 
 `<name>` is the metadata filename in `mods/` without `.pw.toml`.
 
+`config/` holds the few mod configs we ship on purpose (everything else runs
+on mod defaults). Currently just `mobstacker.json`: MobStacker's own defaults
+also cut the vanilla mob spawn caps to about a third, which we don't want, so
+the file restores vanilla caps and keeps owned mobs (horses, cats, wolves,
+recruits, guards, dragons) out of stacks. Run `packwiz refresh` after editing.
+
 Updates never happen implicitly: a mod only moves when you run `update`, and
 `pin` protects specific mods even from `update --all`. Commit the changed
 `.pw.toml` + `index.toml` + `pack.toml` and CI does the rest.

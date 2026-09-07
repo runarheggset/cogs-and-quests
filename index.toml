@@ -1,6 +1,20 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/mobstacker.json"
+hash = "789366b712d57d8901b6f7f694fee95bfacd87b6963b7c1eea0d80a63a462ee8"
+
+[[files]]
+file = "mods/aether.pw.toml"
+hash = "6f87edf40bf0be7e7e266f9e2ff0bf7584c6bedff7975bad3259a21a60d1e598"
+metafile = true
+
+[[files]]
+file = "mods/almanac-lib.pw.toml"
+hash = "067c72c78318b03c01b6d35aff74135ef1c969425e471efe777dce7a174c7005"
+metafile = true
+
+[[files]]
 file = "mods/amendments.pw.toml"
 hash = "4327ca177fdbd9cfc0c2f442bec68899b6c8e8eb46f0e6b04548178c244b6a84"
 metafile = true
@@ -58,6 +72,11 @@ metafile = true
 [[files]]
 file = "mods/create-confectionery.pw.toml"
 hash = "febcfddd76c54c22463f5e69de5d0ace43121d369324e4b13a6b321834e53d05"
+metafile = true
+
+[[files]]
+file = "mods/create-steam-n-rails.pw.toml"
+hash = "993a3a0df7b5ea59ededb0434ebe948f254835201e48c79bc6c644dc63aa71bb"
 metafile = true
 
 [[files]]
@@ -171,6 +190,11 @@ hash = "4b8627a78d4af0faed2f938a6061ccb7e1edb235d0759f2992abfa4c511559cb"
 metafile = true
 
 [[files]]
+file = "mods/let-me-despawn.pw.toml"
+hash = "644607a28024fbb4115884962a09cb4621217f652aacd363f7a2df52ddb69862"
+metafile = true
+
+[[files]]
 file = "mods/macaws-bridges.pw.toml"
 hash = "48fd7031ccf8ecf2e16bddad85f5e53348137477ab465fb75cfd71fddc81bccc"
 metafile = true
@@ -178,6 +202,11 @@ metafile = true
 [[files]]
 file = "mods/macaws-furniture.pw.toml"
 hash = "3706f6817a641198fc325d578d189d502af7c3444148a72e4dc23f214c3611a1"
+metafile = true
+
+[[files]]
+file = "mods/mobstacker.pw.toml"
+hash = "95206a201bd0f4460e2945c4cfced555325fe30fa0a32322dfa0c670de7716dd"
 metafile = true
 
 [[files]]
@@ -253,6 +282,11 @@ metafile = true
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
 hash = "b45a8099d4302af4707f6db58779dbe39898d186e999366e64f16653398a9d63"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-storage.pw.toml"
+hash = "af0aa7613fe7aeee381714b93d38b392583462ae9737ad1d12c1b18d159f0dc3"
 metafile = true
 
 [[files]]

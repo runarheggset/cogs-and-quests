@@ -2,6 +2,7 @@
 
 Generated with `packwiz list` — regenerate after adding/removing mods.
 
+- Almanac Lib
 - Amendments
 - AppleSkin
 - Aquaculture 2
@@ -16,6 +17,7 @@ Generated with `packwiz list` — regenerate after adding/removing mods.
 - Corpse
 - Create
 - Create Confectionery
+- Create: Steam 'n' Rails
 - Creeper no Break Blocks
 - Cristel Lib
 - Dragon Mounts: Legacy
@@ -37,9 +39,11 @@ Generated with `packwiz list` — regenerate after adding/removing mods.
 - Immersive Aircraft
 - Jade 🔍
 - Just Enough Items (JEI)
-- MES - Moog's End Structures
+- Let Me Despawn
 - Macaw's Bridges
 - Macaw's Furniture
+- MES - Moog's End Structures
+- Mob Stacker Ind.
 - ModernFix
 - Moog's Structure Lib (moogs_structures)
 - Moonlight Lib
@@ -53,10 +57,12 @@ Generated with `packwiz list` — regenerate after adding/removing mods.
 - Small Ships [Fabric & Forge]
 - Sophisticated Backpacks
 - Sophisticated Core
+- Sophisticated Storage
 - Storage Drawers
 - Structory
 - Supplementaries
 - Terralith
+- The Aether
 - Towns and Towers
 - Trading Post
 - Villager Recruits: Claim and Siege Update!

@@ -1,0 +1,43 @@
+{
+  "killWholeStackOnDeath": false,
+  "stackHealth": false,
+  "maxMobStackSize": 16,
+  "stackRadius": 6.0,
+  "enableSeparator": false,
+  "consumeSeparator": true,
+  "separatorItem": "minecraft:diamond",
+  "enableAssimilator": false,
+  "consumeAssimilator": true,
+  "assimilatorItem": "minecraft:emerald",
+  "ignoredEntities": [
+    "minecraft:ender_dragon",
+    "minecraft:vex",
+    "minecraft:wolf",
+    "minecraft:cat",
+    "minecraft:parrot",
+    "minecraft:horse",
+    "minecraft:donkey",
+    "minecraft:mule",
+    "minecraft:llama",
+    "minecraft:trader_llama",
+    "minecraft:camel",
+    "minecraft:allay",
+    "minecraft:villager"
+  ],
+  "ignoredMods": [
+    "corpse",
+    "recruits",
+    "workers",
+    "guardvillagers",
+    "dragonmounts"
+  ],
+  "mobCaps": {
+    "monster": 70,
+    "creature": 10,
+    "ambient": 15,
+    "axolotls": 5,
+    "undergroundWaterCreature": 5,
+    "waterCreature": 5,
+    "waterAmbient": 20
+  }
+}

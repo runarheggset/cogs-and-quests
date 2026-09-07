@@ -11,6 +11,8 @@ checking per-mod terms: bundle jars in the repo or a release, or fork/patch a mo
 
 | Mod | License |
 |---|---|
+| The Aether | LicenseRef-Custom |
+| Almanac Lib | LGPL-3.0-only |
 | Amendments | Supplementaries-Team-License-1.1 |
 | AppleSkin | Unlicense |
 | Aquaculture 2 | All Rights Reserved |
@@ -25,6 +27,7 @@ checking per-mod terms: bundle jars in the repo or a release, or fork/patch a mo
 | Corpse | All Rights Reserved |
 | Create | Create-Mod-License |
 | Create Confectionery | MIT |
+| Create: Steam 'n' Rails | LGPL-3.0-only |
 | Creeper no Break Blocks | All Rights Reserved |
 | Cristel Lib | CC-BY-NC-ND-4.0 |
 | Dragon Mounts: Legacy | GPL-3.0-only |
@@ -46,6 +49,8 @@ checking per-mod terms: bundle jars in the repo or a release, or fork/patch a mo
 | Immersive Aircraft | GPL-3.0-only |
 | Jade 🔍 | CC-BY-NC-SA-4.0 |
 | Just Enough Items (JEI) | MIT |
+| Let Me Despawn | LGPL-3.0-only |
+| MobStacker | LGPL-3.0-only |
 | ModernFix | LGPL-3.0-only |
 | MES - Moog's End Structures | LGPL-3.0-only |
 | Macaw's Bridges | All-Rights-Reserved |
@@ -62,6 +67,7 @@ checking per-mod terms: bundle jars in the repo or a release, or fork/patch a mo
 | Small Ships [Fabric & Forge] | All Rights Reserved |
 | Sophisticated Backpacks | All Rights Reserved |
 | Sophisticated Core | All Rights Reserved |
+| Sophisticated Storage | All Rights Reserved |
 | Storage Drawers | MIT |
 | Structory | Stardust-Labs-License |
 | Supplementaries | Supplementaries-Team-License |

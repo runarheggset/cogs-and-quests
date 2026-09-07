@@ -30,14 +30,17 @@ Villages are worth defending, treasure maps are worth following. You can raise
 and ride dragons, sail real ships, and build a rickety little aircraft that
 mostly doesn't crash. Cooking is a proper part of the loop too: **Farmer's
 Delight** plus seasons make the farm and kitchen something you come back to,
-not a wheat field you visit once.
+not a wheat field you visit once. When the overworld feels settled, a glowstone
+frame and a bucket of water open **The Aether**, and **Steam 'n' Rails** turns
+Create into a proper railway to run between all of it.
 
 ### The practical bits
 
-- 61 mods on **1.20.1 Forge**, every version pinned. Updates are deliberate,
+- 78 mods on **1.20.1 Forge**, every version pinned. Updates are deliberate,
   so nothing changes under your save without us meaning it to.
 - Performance mods built in (Embeddium, FerriteCore, ModernFix, Canary,
-  Entity Culling). Allocate 4 GB and it runs fine, including on 8 GB machines.
+  Entity Culling, MobStacker). Allocate 4 GB and it runs fine, including on
+  8 GB machines, even with a barn full of cows.
 - Plays best with two or three people on a small server.
 
 One of you builds the factory, the other fills the storage hall with dungeon

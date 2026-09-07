@@ -1,0 +1,13 @@
+name = "Mob Stacker Ind."
+filename = "mobstacker-1.20.x-forge-1.0.14b.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "3d9854f89ba2494d458ec286d20d0840bf33754f"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6310977
+project-id = 1115297
