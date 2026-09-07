@@ -29,7 +29,8 @@
     "recruits",
     "workers",
     "guardvillagers",
-    "dragonmounts"
+    "dragonmounts",
+    "aether"
   ],
   "mobCaps": {
     "monster": 70,

@@ -39,9 +39,10 @@ Run everything from the repo root.
 
 `config/` holds the few mod configs we ship on purpose (everything else runs
 on mod defaults). Currently just `mobstacker.json`: MobStacker's own defaults
-also cut the vanilla mob spawn caps to about a third, which we don't want, so
-the file restores vanilla caps and keeps owned mobs (horses, cats, wolves,
-recruits, guards, dragons) out of stacks. Run `packwiz refresh` after editing.
+cut the vanilla mob spawn caps to about a third, which we don't want, so the
+file restores vanilla caps and keeps owned mobs (horses, cats, wolves,
+recruits, guards, dragons, everything from the Aether) out of stacks. Run
+`packwiz refresh` after editing.
 
 Updates never happen implicitly: a mod only moves when you run `update`, and
 `pin` protects specific mods even from `update --all`. Commit the changed
@@ -80,3 +81,8 @@ want to automate it, add a step using the CurseForge Upload API with a
 - Two-wave rule for new mods: add, play a session on the 8 GB machine, keep.
 - No sleep-vote mod needed: set `/gamerule playersSleepingPercentage 50` on the
   server so one of two sleepers skips the night.
+- MobStacker and the Aether only coexist because of our own shim,
+  `mods/cogsquests-aethercompat-*.jar` (source in `compat/aethercompat/`).
+  Without it MobStacker nulls the Aether bosses' names on every chunk load
+  and every client that loads a boss is kicked. Keep the shim if either mod
+  stays; rebuild it if the Aether changes its boss classes.

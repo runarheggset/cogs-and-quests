@@ -11,8 +11,10 @@ checking per-mod terms: bundle jars in the repo or a release, or fork/patch a mo
 
 | Mod | License |
 |---|---|
-| The Aether | LicenseRef-Custom |
 | Almanac Lib | LGPL-3.0-only |
+| Let Me Despawn | LGPL-3.0-only |
+| MobStacker | LGPL-3.0-only |
+| The Aether | LicenseRef-Custom |
 | Amendments | Supplementaries-Team-License-1.1 |
 | AppleSkin | Unlicense |
 | Aquaculture 2 | All Rights Reserved |
@@ -49,8 +51,6 @@ checking per-mod terms: bundle jars in the repo or a release, or fork/patch a mo
 | Immersive Aircraft | GPL-3.0-only |
 | Jade 🔍 | CC-BY-NC-SA-4.0 |
 | Just Enough Items (JEI) | MIT |
-| Let Me Despawn | LGPL-3.0-only |
-| MobStacker | LGPL-3.0-only |
 | ModernFix | LGPL-3.0-only |
 | MES - Moog's End Structures | LGPL-3.0-only |
 | Macaw's Bridges | All-Rights-Reserved |

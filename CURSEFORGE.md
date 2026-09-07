@@ -36,7 +36,7 @@ Create into a proper railway to run between all of it.
 
 ### The practical bits
 
-- 78 mods on **1.20.1 Forge**, every version pinned. Updates are deliberate,
+- 79 mods on **1.20.1 Forge**, every version pinned. Updates are deliberate,
   so nothing changes under your save without us meaning it to.
 - Performance mods built in (Embeddium, FerriteCore, ModernFix, Canary,
   Entity Culling, MobStacker). Allocate 4 GB and it runs fine, including on

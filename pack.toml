@@ -1,12 +1,12 @@
 name = "Cogs & Quests"
 author = "Runar & Mjolner"
-version = "0.4.0"
+version = "0.4.1"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "15083a51a81e4583b460f4a29882d8c5d87d93e8359e39e8f4d0b48f7b7896c5"
+hash = "b965df315e989b35e6eeb5c3720758480b37f6564a658a95816bef6cb589c4f4"
 
 [versions]
 forge = "47.4.23"

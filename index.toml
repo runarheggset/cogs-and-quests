@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "config/mobstacker.json"
-hash = "789366b712d57d8901b6f7f694fee95bfacd87b6963b7c1eea0d80a63a462ee8"
+hash = "e1f75ea68b0a5e73ac58af6738f7fe9a1d0705572c819d182e5bb0a866813863"
 
 [[files]]
 file = "mods/aether.pw.toml"
@@ -53,6 +53,10 @@ metafile = true
 file = "mods/clumps.pw.toml"
 hash = "e3173aaa4e9078ad7ace2b9ef43ce15ce9919c0b566d8830cea87264f92b3a6a"
 metafile = true
+
+[[files]]
+file = "mods/cogsquests-aethercompat-1.0.0.jar"
+hash = "2b57f8412b960e7c8e508a81c273d394a5e62f5483d3e5b1b97d66984da01626"
 
 [[files]]
 file = "mods/comforts.pw.toml"

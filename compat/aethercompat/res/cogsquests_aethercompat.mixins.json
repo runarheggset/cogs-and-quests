@@ -1,0 +1,8 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "no.hegz.cogsquests.aethercompat.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": ["SliderMixin", "ValkyrieQueenMixin"],
+  "injectors": { "defaultRequire": 1 }
+}
